@@ -124,6 +124,9 @@ h1 {
 #bestuur .lid h1 {
     text-align: center;
 }
+#bestuur .lid p {
+    text-align: center;
+}
 
 /*Verhuur*/
 
@@ -131,37 +134,36 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    
 }
 
 #verhuur .verhuur1 {
-    max-width: 460px;
     display: flex;
     flex-direction: column;
     text-align: center;
     grid-column: 1 / span 2;
     grid-row: 1;
-    margin: auto;
     background: linear-gradient(to right top, #E2DEDF, #b3b1b2);
     padding: 10px;
-    margin-top: 0;
-    height: 500px;
+    align-items: center;
+    width: 100%;
 }
 
 #verhuur .verhuur2 {
-    max-width: 460px;
     display: flex;
     flex-direction: column;
     text-align: center;
     grid-column: 1 / span 2;
     grid-row: 2;
-    margin: auto;
+    
     background: linear-gradient(to right top, #E2DEDF, #b3b1b2);
     padding: 10px;
-    height: 500px;
+    align-items: center;
+    width: 100%;
 }
 
 #verhuur .foto-container {
-    max-width: 450px;
+    width: 450px;
 }
 
 #verhuur .foto-container img {
@@ -180,7 +182,6 @@ h1 {
     padding: 5px;
     background-color: white;
     margin-top: 20px;
-
 }
 
 @media screen and (max-width:768px) {
@@ -214,6 +215,16 @@ h1 {
     #bestuur .foto-container {
         max-width: 250px;
     }
+    /*Verhuur*/
+    #verhuur .verhuur1 {
+        height: 500px;
+        
+    }
+    
+    #verhuur .verhuur2 {
+        height: 500px;
+        
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -240,10 +251,12 @@ h1 {
         grid-column: 1;
         grid-row: 1;
         
+        
     }
     #verhuur .verhuur2 {
         grid-column: 2;
         grid-row: 1;
+        
     }
     #verhuur .foto-container {
         height: 300px;
@@ -251,8 +264,7 @@ h1 {
     #verhuur .foto-container img{
         height: 100%;
     }
-    
-    
+
 }
 
 @media screen and (min-width:1100px) {
