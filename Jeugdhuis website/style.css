@@ -124,6 +124,7 @@ h1 {
 #bestuur .lid h1 {
     text-align: center;
 }
+
 #bestuur .lid p {
     text-align: center;
 }
@@ -134,7 +135,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    
 }
 
 #verhuur .verhuur1 {
@@ -155,7 +155,6 @@ h1 {
     text-align: center;
     grid-column: 1 / span 2;
     grid-row: 2;
-    
     background: linear-gradient(to right top, #E2DEDF, #b3b1b2);
     padding: 10px;
     align-items: center;
@@ -177,12 +176,111 @@ h1 {
 #verhuur .verhuur-info h1 {
     margin: 10px 0;
 }
+
 #verhuur .huurknop {
     height: 30px;
     padding: 5px;
     background-color: white;
     margin-top: 20px;
 }
+
+/*Word lid*/
+#wordLid .img-container {
+    display: none;
+}
+#wordLid section {
+    
+    background: #E2DEDF;
+    margin: auto;
+    padding: 10px 40px;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#wordLid form {
+    flex: 2;
+    
+}
+
+#wordLid .naam {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.voornaam {
+    flex-basis: 48%;
+}
+
+.achternaam {
+    flex-basis: 48%;
+}
+
+#wordLid .adres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.straat {
+    flex-basis: 55%;
+}
+
+.huisnummer {
+    flex-basis: 20%;
+}
+
+.bus {
+    flex-basis: 20%;
+}
+
+#email, #stad-dorp {
+    width: 100%;
+}
+
+input[type=text], input[type=email], input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+}
+
+input[type=submit]:hover {
+    background-color: gray;
+    color: white;
+    transition: 0.5s ease;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#word-lid .img-container {
+    flex: 1;
+}
+
+#word-lid section img {
+    width: 100%;
+    box-shadow: 7px 7px gray;
+}
+
+
 
 @media screen and (max-width:768px) {
     body {
@@ -218,13 +316,15 @@ h1 {
     /*Verhuur*/
     #verhuur .verhuur1 {
         height: 500px;
-        
     }
-    
     #verhuur .verhuur2 {
         height: 500px;
-        
     }
+
+    
+    
+/*Word lid*/
+    
 }
 
 @media screen and (min-width:768px) {
@@ -246,25 +346,121 @@ h1 {
         max-width: 300px;
     }
     /*Verhuur*/
-    
     #verhuur .verhuur1 {
         grid-column: 1;
         grid-row: 1;
-        
-        
     }
     #verhuur .verhuur2 {
         grid-column: 2;
         grid-row: 1;
-        
     }
     #verhuur .foto-container {
         height: 300px;
     }
-    #verhuur .foto-container img{
+    #verhuur .foto-container img {
         height: 100%;
     }
 
+    /*word lid*/
+    #wordLid .img-container {
+        display: block;
+        height: 200px;
+        justify-items: center;
+        background-color: black;
+
+    }
+    #wordLid section {
+        
+        background: #E2DEDF;
+        margin: auto;
+        padding: 10px 40px;
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        border-radius: 8px;
+    }
+    
+    #wordLid form {
+        flex: 2;
+        
+    }
+    
+    #wordLid .naam {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .voornaam {
+        flex-basis: 48%;
+    }
+    
+    .achternaam {
+        flex-basis: 48%;
+    }
+    
+    #wordLid .adres {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .straat {
+        flex-basis: 55%;
+    }
+    
+    .huisnummer {
+        flex-basis: 20%;
+    }
+    
+    .bus {
+        flex-basis: 20%;
+    }
+    
+    #email, #stad-dorp {
+        width: 100%;
+    }
+    
+    input[type=text], input[type=email], input[type=number], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    input[type=submit] {
+        background-color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: black;
+    }
+    
+    input[type=submit]:hover {
+        background-color: gray;
+        color: white;
+        transition: 0.5s ease;
+    }
+    
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    #word-lid .img-container {
+        flex: 1;
+    }
+    
+    #word-lid section img {
+        width: 100%;
+        box-shadow: 7px 7px gray;
+    }
+    
 }
 
 @media screen and (min-width:1100px) {
